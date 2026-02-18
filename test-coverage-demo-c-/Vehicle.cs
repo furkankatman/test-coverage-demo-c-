@@ -9,6 +9,7 @@ public class Vehicle
         Brand = brand;
         Model = model;
         Year = year;
+        var r=1;
     }
     public void Start()
     {
