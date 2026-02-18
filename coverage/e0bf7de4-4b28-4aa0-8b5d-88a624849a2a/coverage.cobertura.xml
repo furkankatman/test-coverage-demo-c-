@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<coverage line-rate="0" branch-rate="0" version="1.9" timestamp="1771420776" lines-covered="0" lines-valid="35" branches-covered="0" branches-valid="8">
+<coverage line-rate="0.3611" branch-rate="0" version="1.9" timestamp="1771425714" lines-covered="13" lines-valid="36" branches-covered="0" branches-valid="8">
   <sources>
     <source>C:\Development\Personal\test-coverage-demo-c-\test-coverage-demo-c-\</source>
   </sources>
   <packages>
-    <package name="test-coverage-demo-c-" line-rate="0" branch-rate="0" complexity="14">
+    <package name="test-coverage-demo-c-" line-rate="0.3611" branch-rate="0" complexity="14">
       <classes>
         <class name="Program" filename="Program.cs" line-rate="0" branch-rate="0" complexity="8">
           <methods>
@@ -76,64 +76,66 @@
             <line number="28" hits="0" branch="False" />
           </lines>
         </class>
-        <class name="Vehicle" filename="Vehicle.cs" line-rate="0" branch-rate="1" complexity="6">
+        <class name="Vehicle" filename="Vehicle.cs" line-rate="0.8125" branch-rate="1" complexity="6">
           <methods>
-            <method name="get_Brand" signature="()" line-rate="0" branch-rate="1" complexity="1">
+            <method name="get_Brand" signature="()" line-rate="1" branch-rate="1" complexity="1">
               <lines>
-                <line number="3" hits="0" branch="False" />
+                <line number="3" hits="1" branch="False" />
               </lines>
             </method>
-            <method name="get_Model" signature="()" line-rate="0" branch-rate="1" complexity="1">
+            <method name="get_Model" signature="()" line-rate="1" branch-rate="1" complexity="1">
               <lines>
-                <line number="4" hits="0" branch="False" />
+                <line number="4" hits="1" branch="False" />
               </lines>
             </method>
-            <method name="get_Year" signature="()" line-rate="0" branch-rate="1" complexity="1">
+            <method name="get_Year" signature="()" line-rate="1" branch-rate="1" complexity="1">
               <lines>
-                <line number="5" hits="0" branch="False" />
+                <line number="5" hits="1" branch="False" />
               </lines>
             </method>
-            <method name="Start" signature="()" line-rate="0" branch-rate="1" complexity="1">
+            <method name="Start" signature="()" line-rate="1" branch-rate="1" complexity="1">
               <lines>
-                <line number="14" hits="0" branch="False" />
-                <line number="15" hits="0" branch="False" />
-                <line number="17" hits="0" branch="False" />
+                <line number="15" hits="1" branch="False" />
+                <line number="16" hits="1" branch="False" />
+                <line number="18" hits="1" branch="False" />
               </lines>
             </method>
             <method name="Stop" signature="()" line-rate="0" branch-rate="1" complexity="1">
               <lines>
-                <line number="20" hits="0" branch="False" />
                 <line number="21" hits="0" branch="False" />
-                <line number="23" hits="0" branch="False" />
+                <line number="22" hits="0" branch="False" />
+                <line number="24" hits="0" branch="False" />
               </lines>
             </method>
-            <method name=".ctor" signature="(System.String,System.String,System.Int32)" line-rate="0" branch-rate="1" complexity="1">
+            <method name=".ctor" signature="(System.String,System.String,System.Int32)" line-rate="1" branch-rate="1" complexity="1">
               <lines>
-                <line number="7" hits="0" branch="False" />
-                <line number="8" hits="0" branch="False" />
-                <line number="9" hits="0" branch="False" />
-                <line number="10" hits="0" branch="False" />
-                <line number="11" hits="0" branch="False" />
-                <line number="12" hits="0" branch="False" />
+                <line number="7" hits="1" branch="False" />
+                <line number="8" hits="1" branch="False" />
+                <line number="9" hits="1" branch="False" />
+                <line number="10" hits="1" branch="False" />
+                <line number="11" hits="1" branch="False" />
+                <line number="12" hits="1" branch="False" />
+                <line number="13" hits="1" branch="False" />
               </lines>
             </method>
           </methods>
           <lines>
-            <line number="3" hits="0" branch="False" />
-            <line number="4" hits="0" branch="False" />
-            <line number="5" hits="0" branch="False" />
-            <line number="14" hits="0" branch="False" />
-            <line number="15" hits="0" branch="False" />
-            <line number="17" hits="0" branch="False" />
-            <line number="20" hits="0" branch="False" />
+            <line number="3" hits="1" branch="False" />
+            <line number="4" hits="1" branch="False" />
+            <line number="5" hits="1" branch="False" />
+            <line number="15" hits="1" branch="False" />
+            <line number="16" hits="1" branch="False" />
+            <line number="18" hits="1" branch="False" />
             <line number="21" hits="0" branch="False" />
-            <line number="23" hits="0" branch="False" />
-            <line number="7" hits="0" branch="False" />
-            <line number="8" hits="0" branch="False" />
-            <line number="9" hits="0" branch="False" />
-            <line number="10" hits="0" branch="False" />
-            <line number="11" hits="0" branch="False" />
-            <line number="12" hits="0" branch="False" />
+            <line number="22" hits="0" branch="False" />
+            <line number="24" hits="0" branch="False" />
+            <line number="7" hits="1" branch="False" />
+            <line number="8" hits="1" branch="False" />
+            <line number="9" hits="1" branch="False" />
+            <line number="10" hits="1" branch="False" />
+            <line number="11" hits="1" branch="False" />
+            <line number="12" hits="1" branch="False" />
+            <line number="13" hits="1" branch="False" />
           </lines>
         </class>
       </classes>
