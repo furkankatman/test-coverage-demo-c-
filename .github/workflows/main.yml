@@ -1,4 +1,16 @@
 
+
+ - name: Show working directory and tree (top)
+        run: |
+          pwd
+          ls -la
+
+      - name: Find cobertura files
+        run: |
+          echo "Searching for cobertura xml..."
+          find . -maxdepth 6 -type f -iname "*cobertura*.xml" -print
+
+
 name: Coverage Summary
 
 on:
