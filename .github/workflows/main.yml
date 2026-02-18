@@ -1,16 +1,4 @@
 
-
- - name: Show working directory and tree (top)
-        run: |
-          pwd
-          ls -la
-
-      - name: Find cobertura files
-        run: |
-          echo "Searching for cobertura xml..."
-          find . -maxdepth 6 -type f -iname "*cobertura*.xml" -print
-
-
 name: Coverage Summary
 
 on:
@@ -26,7 +14,13 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v4
 
-      # Adjust this section depending on your language/test runner
+      # (Optional) Setup .NET SDK; remove if not needed
+      - name: Setup .NET
+        uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: '8.0.x'
+
+      # Run tests and emit Cobertura XML into ./coverage/<GUID>/
       - name: Run tests with coverage
         run: |
           dotnet test --no-build \
@@ -34,6 +28,18 @@ jobs:
             --collect:"XPlat Code Coverage" \
             --logger trx \
             --results-directory coverage
+
+      # --- Diagnostics: verify where the coverage file actually is ---
+      - name: Show working directory and tree (top)
+        run: |
+          pwd
+          ls -la
+
+      - name: Find cobertura files
+        run: |
+          echo "Searching for cobertura xml..."
+          find . -maxdepth 6 -type f -iname "*cobertura*.xml" -print
+      # ----------------------------------------------------------------
 
       - name: Generate Coverage Summary
         uses: irongut/CodeCoverageSummary@v1.3.0
@@ -45,8 +51,8 @@ jobs:
 
       # Optional: Post PR comment with the summary
       - name: Add Coverage PR Comment
-        uses: marocchino/sticky-pull-request-comment@v2
         if: github.event_name == 'pull_request'
+        uses: marocchino/sticky-pull-request-comment@v2
         with:
           recreate: true
           path: code-coverage-results.md
