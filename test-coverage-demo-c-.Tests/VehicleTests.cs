@@ -21,7 +21,7 @@ namespace test_coverage_demo_c_.Tests
 
             // Assert
             var output = consoleOutput.ToString().Trim();
-            Assert.AreEqual("Vehicle is starting...", output);
+            Assert.AreEqual("Vehicle is starting...x", output);
         }
     }
 }
