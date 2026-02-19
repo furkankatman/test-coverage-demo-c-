@@ -1,4 +1,7 @@
 
+
+Remove-Item -Recurse -Force coverage
+Get-ChildItem -Recurse -Filter coverage | Remove-Item -Recurse -Force
 $ErrorActionPreference = "Stop"
 dotnet build -c Debug
 dotnet test ./test-coverage-demo-c-.Tests/test-coverage-demo-c-.Tests.csproj `
