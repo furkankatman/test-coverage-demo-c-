@@ -1,0 +1,25 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+      {
+        // Launch your console app
+        "name": ".NET Launch (console)",
+        "type": "coreclr",
+        "request": "launch",
+        // optional: tie F5 to a build task
+        "preLaunchTask": "build",
+        // Adjust path to your app dll + TFM (net9.0)
+        "program": "${workspaceFolder}/test-coverage-demo-c-/bin/Debug/net9.0/test-coverage-demo-c-.dll",
+        "cwd": "${workspaceFolder}/test-coverage-demo-c-",
+        "console": "integratedTerminal",
+        "stopAtEntry": false,
+        "justMyCode": true
+      },
+      {
+        // Attach to a running .NET process
+        "name": ".NET Attach",
+        "type": "coreclr",
+        "request": "attach"
+      }
+    ]
+  }
