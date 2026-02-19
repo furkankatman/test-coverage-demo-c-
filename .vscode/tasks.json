@@ -1,0 +1,15 @@
+
+{
+    "version": "2.0.0",
+    "tasks": [
+      {
+        "label": "build",
+        "type": "process",
+        "command": "dotnet",
+        "args": [ "build", "${workspaceFolder}/test-coverage-demo-c-/test-coverage-demo-c-.csproj", "-c", "Debug" ],
+        "problemMatcher": "$msCompile",
+        "group": { "kind": "build", "isDefault": true }
+      }
+    ]
+  }
+  
